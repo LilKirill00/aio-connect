@@ -1,16 +1,18 @@
 # aio-connect
 
-**aio-connect** — библиотека предназначается для создания ботов в среде 1С-Коннект.
+**aio-connect** — пакет предназначенный для создания ботов в среде 1С-Коннект.
 
-За основу для написания библиотеки была заимствована библиотека [aiogram](https://github.com/aiogram/aiogram).
+За основу для написания пакета была заимствована библиотека [aiogram](https://github.com/aiogram/aiogram).
 
 ## Установка
-Вы можете установить библиотеку с помощью pip:
+Установить с помощью pip:
 ```python
 pip install aio-1c-connect
 ```
 
 ## Использование
+Пример реализации бота с использованием данного пакета: [aio-connect-simple-bot](https://github.com/LilKirill00/aio-connect-simple-bot) 
+
 Пример создания бота:
 ```python
 import sys
@@ -44,7 +46,7 @@ bot = Bot(
 )
 
 
-async def on_startup():
+async def on_startup() -> None:
     await bot.set_hook(type=HookType.BOT, id=LINE_ID, url=BASE_WEBHOOK_URL + WEBHOOK_PATH + LINE_ID)
 
 
@@ -85,8 +87,8 @@ if __name__ == "__main__":
 ```
 
 ## Документация
-Написание библиотеки основывалось на: [Документации для разработчиков](https://1c-connect.atlassian.net/wiki/spaces/PUBLIC/pages/975568915/4.).
+Написание пакета основывалось на: [Документации для разработчиков](https://1c-connect.atlassian.net/wiki/spaces/PUBLIC/pages/975568915/4.).
 
 ## Лицензия
-Библиотека распространяется под лицензией MIT. Подробности можно узнать в файле
+Пакет распространяется под лицензией MIT. Подробности можно узнать в файле
 [LICENSE](https://github.com/LilKirill00/aio-connect/blob/main/LICENSE).
