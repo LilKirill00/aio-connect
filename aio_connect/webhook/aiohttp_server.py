@@ -5,8 +5,8 @@ from typing import Any, Dict, Set
 from aiohttp import web
 from aiohttp.abc import Application
 
-from aio_connect import Bot, Dispatcher
-from aio_connect.methods import ConnectMethod
+from .. import Bot, Dispatcher
+from ..methods import ConnectMethod
 
 
 def setup_application(app: Application, dispatcher: Dispatcher, /, **kwargs: Any) -> None:

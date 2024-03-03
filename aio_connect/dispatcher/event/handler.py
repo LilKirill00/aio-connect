@@ -8,10 +8,10 @@ from typing import Any, Callable, Dict, List, Optional, Set, Tuple
 
 from magic_filter.magic import MagicFilter as OriginalMagicFilter
 
-from aio_connect.filters.base import Filter
-from aio_connect.handlers import BaseHandler
-from aio_connect.utils.magic_filter import MagicFilter
-from aio_connect.utils.warnings import Recommendation
+from ...filters.base import Filter
+from ...handlers import BaseHandler
+from ...utils.magic_filter import MagicFilter
+from ...utils.warnings import Recommendation
 
 CallbackType = Callable[..., Any]
 

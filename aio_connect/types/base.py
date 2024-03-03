@@ -3,7 +3,7 @@ from unittest.mock import sentinel
 
 from pydantic import BaseModel, ConfigDict, model_validator
 
-from aio_connect.client.context_controller import BotContextController
+from ..client.context_controller import BotContextController
 
 
 class ConnectObject(BotContextController, BaseModel):

@@ -21,7 +21,7 @@ from typing import (
 
 from pydantic import ValidationError
 
-from aio_connect.exceptions import (
+from ...exceptions import (
     ClientDecodeError,
     RestartingConnect,
     ConnectAPIError,
@@ -34,10 +34,10 @@ from aio_connect.exceptions import (
     ConnectUnauthorizedError, UnprocessalbleEntity,
 )
 
+from .middlewares.manager import RequestMiddlewareManager
 from ...methods import Response, ConnectMethod
 from ...methods.base import ConnectType
 from ...types import InputFile
-from .middlewares.manager import RequestMiddlewareManager
 
 if TYPE_CHECKING:
     from ..bot import Bot

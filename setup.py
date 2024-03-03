@@ -8,7 +8,7 @@ def readme():
 
 setup(
     name='aio-1c-connect',
-    version='0.0.2',
+    version='0.0.3',
     author='LilKirill00',
     author_email='pc.browsers.1@gmail.com',
     description='This is a library for creating bots in the 1C-Connect environment',

@@ -1,7 +1,7 @@
 from typing import Any, Optional
 
-from aio_connect.methods import ConnectMethod
-from aio_connect.methods.base import ConnectType
+from .methods import ConnectMethod
+from .methods.base import ConnectType
 
 
 class AioconnectError(Exception):

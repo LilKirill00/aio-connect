@@ -4,7 +4,7 @@ from pydantic import BaseModel, PrivateAttr
 from typing_extensions import Self
 
 if TYPE_CHECKING:
-    from aio_connect.client.bot import Bot
+    from .bot import Bot
 
 
 class BotContextController(BaseModel):

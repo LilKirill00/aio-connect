@@ -1,7 +1,7 @@
 from typing import Any, Awaitable, Callable, Dict, Optional, Tuple
 
-from aio_connect.dispatcher.middlewares.base import BaseMiddleware
-from aio_connect.types import ConnectObject, Update, Line, User
+from .base import BaseMiddleware
+from ...types import ConnectObject, Update, Line, User
 
 EVENT_LINE_ID = "event_line_id"
 EVENT_USER_ID = "event_user_id"

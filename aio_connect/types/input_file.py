@@ -9,7 +9,7 @@ from typing import TYPE_CHECKING, Any, AsyncGenerator, Dict, Optional, Union
 import aiofiles
 
 if TYPE_CHECKING:
-    from aio_connect.client.bot import Bot
+    from ..client.bot import Bot
 
 DEFAULT_CHUNK_SIZE = 64 * 1024  # 64 kb
 

@@ -1,14 +1,14 @@
 from typing import Any, Awaitable, Callable, Dict, Optional
 
-from aio_connect.dispatcher.middlewares.base import BaseMiddleware
-from aio_connect.fsm.context import FSMContext
-from aio_connect.fsm.storage.base import (
+from ..dispatcher.middlewares.base import BaseMiddleware
+from .context import FSMContext
+from .storage.base import (
     DEFAULT_DESTINY,
     BaseEventIsolation,
     BaseStorage,
     StorageKey,
 )
-from aio_connect.types import ConnectObject, UUID
+from ..types import ConnectObject, UUID
 
 
 class FSMContextMiddleware(BaseMiddleware):

@@ -3,8 +3,8 @@ from contextlib import asynccontextmanager
 from dataclasses import dataclass
 from typing import Any, AsyncGenerator, Dict, Optional, Union
 
-from aio_connect.fsm.state import State
-from aio_connect.types import UUID
+from ..state import State
+from ...types import UUID
 
 StateType = Optional[Union[str, State]]
 

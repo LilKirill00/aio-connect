@@ -20,12 +20,11 @@ from aiohttp import BasicAuth, ClientError, ClientSession, FormData, TCPConnecto
 from aiohttp.hdrs import USER_AGENT
 from aiohttp.http import SERVER_SOFTWARE
 
-from aio_connect.methods import ConnectMethod
-
-from ...exceptions import ConnectNetworkError
+from .base import BaseSession
+from ...methods import ConnectMethod
 from ...methods.base import ConnectType
 from ...types import InputFile
-from .base import BaseSession
+from ...exceptions import ConnectNetworkError
 
 if TYPE_CHECKING:
     from ..bot import Bot

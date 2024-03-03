@@ -3,8 +3,8 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import TYPE_CHECKING, Protocol
 
-from aio_connect.methods import Response, ConnectMethod
-from aio_connect.methods.base import ConnectType
+from ....methods import Response, ConnectMethod
+from ....methods.base import ConnectType
 
 if TYPE_CHECKING:
     from ...bot import Bot

@@ -4,8 +4,8 @@ from contextlib import asynccontextmanager
 from dataclasses import dataclass, field
 from typing import Any, AsyncGenerator, DefaultDict, Dict, Hashable, Optional
 
-from aio_connect.fsm.state import State
-from aio_connect.fsm.storage.base import (
+from ..state import State
+from ..storage.base import (
     BaseEventIsolation,
     BaseStorage,
     StateType,

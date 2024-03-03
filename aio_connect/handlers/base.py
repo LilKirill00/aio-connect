@@ -3,10 +3,10 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import TYPE_CHECKING, Any, Dict, Generic, TypeVar, cast
 
-from aio_connect.types import Update
+from ..types import Update
 
 if TYPE_CHECKING:
-    from aio_connect import Bot
+    from .. import Bot
 
 T = TypeVar("T")
 
@@ -28,8 +28,6 @@ class BaseHandler(BaseHandlerMixin[T], ABC):
 
     @property
     def bot(self) -> Bot:
-        from aio_connect import Bot
-
         if "bot" in self.data:
             return cast(Bot, self.data["bot"])
         raise RuntimeError("Bot instance not found in the context")

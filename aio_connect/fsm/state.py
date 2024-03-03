@@ -1,7 +1,7 @@
 import inspect
 from typing import Any, Iterator, Optional, Tuple, Type, no_type_check
 
-from aio_connect.types import ConnectObject
+from ..types import ConnectObject
 
 
 class State:

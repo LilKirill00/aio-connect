@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import Any, Awaitable, Callable, Dict, TypeVar
 
-from aio_connect.types import ConnectObject
+from ...types import ConnectObject
 
 T = TypeVar("T")
 

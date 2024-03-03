@@ -1,13 +1,13 @@
 import functools
 from typing import Any, Callable, Dict, List, Optional, Sequence, Union, overload
 
-from aio_connect.dispatcher.event.bases import (
+from ..event.bases import (
     MiddlewareEventType,
     MiddlewareType,
     NextMiddlewareType,
 )
-from aio_connect.dispatcher.event.handler import CallbackType
-from aio_connect.types import ConnectObject
+from ..event.handler import CallbackType
+from ...types import ConnectObject
 
 
 class MiddlewareManager(Sequence[MiddlewareType[ConnectObject]]):

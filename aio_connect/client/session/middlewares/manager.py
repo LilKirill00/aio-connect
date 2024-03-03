@@ -3,11 +3,11 @@ from __future__ import annotations
 from functools import partial
 from typing import Any, Callable, List, Optional, Sequence, Union, cast, overload
 
-from aio_connect.client.session.middlewares.base import (
+from .base import (
     NextRequestMiddlewareType,
     RequestMiddlewareType,
 )
-from aio_connect.methods.base import ConnectType
+from ....methods.base import ConnectType
 
 
 class RequestMiddlewareManager(Sequence[RequestMiddlewareType]):
@@ -27,7 +27,7 @@ class RequestMiddlewareManager(Sequence[RequestMiddlewareType]):
     def __call__(
         self,
         middleware: Optional[RequestMiddlewareType] = None,
-    ) -> Union[Callable[[RequestMiddlewareType], RequestMiddlewareType], RequestMiddlewareType,]:
+    ) -> Union[Callable[[RequestMiddlewareType], RequestMiddlewareType], RequestMiddlewareType]:
         if middleware is None:
             return self.register
         return self.register(middleware)

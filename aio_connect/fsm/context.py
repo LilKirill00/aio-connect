@@ -1,6 +1,6 @@
 from typing import Any, Dict, Optional
 
-from aio_connect.fsm.storage.base import BaseStorage, StateType, StorageKey
+from .storage.base import BaseStorage, StateType, StorageKey
 
 
 class FSMContext:

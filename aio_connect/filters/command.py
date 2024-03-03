@@ -17,11 +17,11 @@ from typing import (
 
 from magic_filter import MagicFilter
 
-from aio_connect.filters.base import Filter
-from aio_connect.types import BotCommand, TypeLine
+from .base import Filter
+from ..types import BotCommand, TypeLine
 
 if TYPE_CHECKING:
-    from aio_connect import Bot
+    from .. import Bot
 
 CommandPatternType = Union[str, re.Pattern, BotCommand]
 

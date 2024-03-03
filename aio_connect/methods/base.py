@@ -15,8 +15,7 @@ from typing import (
 from pydantic import BaseModel, ConfigDict
 from pydantic.functional_validators import model_validator
 
-from aio_connect.client.context_controller import BotContextController
-
+from ..client.context_controller import BotContextController
 from ..types import InputFile
 from ..types.base import UNSET_TYPE
 

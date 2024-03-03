@@ -2,15 +2,14 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Callable, Dict, List
 
-from aio_connect.dispatcher.middlewares.manager import MiddlewareManager
-
-from ...exceptions import UnsupportedKeywordArgument
-from ...types import ConnectObject
 from .bases import UNHANDLED, MiddlewareType, SkipHandler
 from .handler import CallbackType, FilterObject, HandlerObject
+from ..middlewares.manager import MiddlewareManager
+from ...exceptions import UnsupportedKeywordArgument
+from ...types import ConnectObject
 
 if TYPE_CHECKING:
-    from aio_connect.dispatcher.router import Router
+    from ..router import Router
 
 
 class ConnectEventObserver:
