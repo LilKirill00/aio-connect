@@ -11,6 +11,8 @@ pip install aio-1c-connect
 ```
 
 ## Использование
+Пример реализации бота с использованием библиотеки: [aio-connect-simple-bot](https://github.com/LilKirill00/aio-connect-simple-bot) 
+
 Пример создания бота:
 ```python
 import sys
@@ -44,7 +46,7 @@ bot = Bot(
 )
 
 
-async def on_startup():
+async def on_startup() -> None:
     await bot.set_hook(type=HookType.BOT, id=LINE_ID, url=BASE_WEBHOOK_URL + WEBHOOK_PATH + LINE_ID)
 
 
