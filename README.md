@@ -11,7 +11,7 @@ pip install aio-1c-connect
 ```
 
 ## Использование
-Пример реализации бота с использованием библиотеки: [aio-connect-simple-bot](https://github.com/LilKirill00/aio-connect-simple-bot) 
+Пример реализации бота с использованием данной библиотеки: [aio-connect-simple-bot](https://github.com/LilKirill00/aio-connect-simple-bot) 
 
 Пример создания бота:
 ```python
